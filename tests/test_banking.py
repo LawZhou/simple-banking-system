@@ -73,10 +73,6 @@ def test_save_creates_file(tmp_path: Path):
 
 
 def test_empty_system(tmp_path: Path):
-    """
-    file should exist after save_csv.
-    """
-
     path = tmp_path / "acc_not_exist.csv"
     bank = BankingSystem.load_csv(path)
 
